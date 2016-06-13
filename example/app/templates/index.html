@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Bagel Example</title>
+    <link href="style.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <h1>{{ echo $USER }}</h1>
+    <h2>{{ date }}</h2>
+    Hello World!
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <p>Donec ultrices tincidunt arcu, non sodales neque sodales ut <br>
+      etiam sit! Nullam non nisi est, sit amet facilisis magna etiam <br>
+      tempor, orci eu lobortis elementum, nibh tellus molestie nunc, <br>
+      non.</p>
+    <p>Hostname: {{ echo $HOSTNAME }}.</p>
+    <p> {{ ls | grep py$ }} </p>
+    <p>
+      {{ bagel -h | head -1 }}
+    </p>
+    <h2>My Posts</h2>
+    <section>
+      {{ find pages/*.md -print0 | xargs -0 -I {} pandoc {} }}
+    </section>
+  </body>
+</html>

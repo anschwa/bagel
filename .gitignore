@@ -1,0 +1,4 @@
+bagel.egg-info
+build
+dist
+example/pages/.*
