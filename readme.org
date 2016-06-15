@@ -4,7 +4,7 @@
 #+OPTIONS: ':true *:true toc:nil num:nil
 
 * Description
-Bagel is a /naive/ static website generator.
+Bagel is a /naive/ and /language-agnostic/ static website generator.
 
 Using a tempting system that pairs with your available command line
 tools, bagel helps you build websites without getting in the way.
@@ -13,8 +13,9 @@ Everything is constructed completely inside your HTML templates, no
 frameworks, libraries, or special syntax. Shell commands within the
 template are evaluated and rendered into a static file.
 
+** Python LiveReload
 Using [[https://github.com/lepture/python-livereload][python-livereload]] is not required, but it makes development even
-faster and nearly seamless. There is a basic [[example/server.py][server.py]] in the example
+faster and nearly seamless. There is a basic [[example/app/server.py][server.py]] in the example
 project directory.
 
 * Install

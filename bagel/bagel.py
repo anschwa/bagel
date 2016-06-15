@@ -112,7 +112,7 @@ def main():
     parser = argparse.ArgumentParser(
         description="Evaluate template code and render file(s)")
     parser.add_argument("-t", "--file-type", action="store", dest="file_type",
-                        help="file extension for templates (ex: html)")
+                        help="file extension of templates (ex: html)")
     parser.add_argument("source", type=str,
                         help="input path", nargs="?")
     parser.add_argument("target", type=str,
